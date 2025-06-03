@@ -7,7 +7,6 @@ cluster:
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  namespace: jx
 
 environments:
   - key: dev
@@ -16,16 +15,14 @@ environments:
 
 repository: nexus
 secretStorage: local
+
 storage:
   logs:
     enabled: true
-    bucketUrl: gs://jx-logs
   reports:
     enabled: true
-    bucketUrl: gs://jx-reports
   repository:
     enabled: true
-    bucketUrl: gs://jx-repository
 
 vault:
   name: vault
